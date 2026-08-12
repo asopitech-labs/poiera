@@ -383,17 +383,29 @@ Delegation can be constrained by:
 ```text
 Human or CI Identity
           │
-          │ delegates
+          │ Poiera-audience OAuth token
           ▼
        Poiera
           │
-          │ issues a short-lived identity
-          ▼
-    Execution Agent
-          │
-          ▼
-Cloud / Runtime / Registry
+          ├── evaluates policy
+          ├── derives a short-lived Execution Mandate
+          └── returns compact Control Directives
+                         │
+                         ▼
+                Execution Agent
+                  (self-authenticated)
+                         │
+                         ▼
+               Poiera Executor Gateway
+                         │
+                         │ separate product credential
+                         ▼
+              Cloud / Runtime / Registry
 ```
+
+The inbound token terminates at Poiera. It is never forwarded to another agent or product API. Delegated execution is represented by a narrower, short-lived mandate; product credentials are acquired separately and remain bound to their intended audience.
+
+The design baseline, protocol mapping, feasibility questions, and validation plan are maintained in [Authorization and Agent Delegation: Grand Zero](docs/authorization-grand-zero.md).
 
 ## Immutable Plans and Approval
 
