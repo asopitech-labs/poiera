@@ -4,6 +4,8 @@
 
 Poiera is an agent-native application control plane that enables AI agents to understand, change, build, deploy, and verify applications through compact semantic contracts.
 
+**[Explore the Poiera concept site](https://asopitech-labs.github.io/poiera/)**
+
 Instead of requiring an agent to repeatedly inspect an entire repository, infrastructure configuration, interface implementation, and deployment pipeline, Poiera presents the smallest relevant view of an application and provides the authority and execution machinery needed to act on it.
 
 ```text
@@ -48,6 +50,16 @@ Agents can already read code and invoke development tools. The difficult part is
 - and evidence that the resulting application behaves as declared.
 
 Poiera provides that boundary.
+
+## Follow and participate
+
+Poiera is being shaped in the open. You do not need to write code to help define the boundary for trustworthy agent-led delivery.
+
+- **[Star the repository](https://github.com/asopitech-labs/poiera)** to save the project and help others discover it.
+- **[Watch the repository](https://github.com/asopitech-labs/poiera/subscription)** to follow the activity that matters to you.
+- **[Share the concept site](https://asopitech-labs.github.io/poiera/)** with people working on AI agents, developer tools, or delivery systems.
+- **[Join the discussion](https://github.com/asopitech-labs/poiera/discussions)** to propose a use case, question the trust model, or share a counterexample.
+- **[Open an issue](https://github.com/asopitech-labs/poiera/issues/new/choose)** for a concrete feature, bug, driver, or implementation task.
 
 ## Core Idea
 

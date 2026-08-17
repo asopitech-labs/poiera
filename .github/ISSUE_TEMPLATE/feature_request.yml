@@ -1,0 +1,44 @@
+name: Feature request
+description: Propose a concrete capability or improvement for Poiera.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping shape Poiera. Early use cases, questions, and challenges to the trust model are also welcome in Discussions.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What agent-led workflow are you trying to delegate, and what is difficult or risky today?
+      placeholder: Describe the application change, environment, tools, and current human supervision.
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Desired control boundary
+      description: What context, actions, resources, environment, time window, or approvals should constrain the agent?
+    validations:
+      required: true
+  - type: textarea
+    id: path
+    attributes:
+      label: Expected execution path
+      description: What should Poiera plan, authorize, coordinate, deploy, or verify?
+  - type: textarea
+    id: integration
+    attributes:
+      label: Drivers and integrations
+      description: Which repositories, CI systems, cloud runtimes, backend platforms, or interface systems are involved?
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+      description: What evidence would show that the change completed correctly?
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add examples, links, plans, logs, or alternatives.
